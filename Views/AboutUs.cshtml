@@ -1,0 +1,37 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+}
+
+<section class="section-wrapper about-page-w">
+    <div class="container">
+        <h1 class='section-main-header'>@Model.Content.GetPropertyValue("pageTitle")</h1>
+        <div class='row row-separated'>
+            <div class='span7'>
+                @if (Model.Content.HasValue("subTitle"))
+                {
+                    <h3 class='section-header'>@Model.Content.GetPropertyValue("subTitle")</h3>
+                }
+                @if (Model.Content.HasValue("aboutDescription"))
+                {
+                    @Model.Content.GetPropertyValue("aboutDescription")
+                }
+            </div>
+            <div class='span5'>
+                @if (Model.Content.HasValue("aboutImage"))
+                {
+                    var image1 = Model.Content.GetPropertyValue<DAMP.PropertyEditorValueConverter.Model>("aboutImage"); 
+                <img alt="@image1.First.Alt" src="@image1.First.TypedCrops["aboutcrop"]" />
+                }
+            </div>
+        </div>
+        <div class='row row-separated'>
+            <div class='span12'>
+            @if (Model.Content.HasValue("aboutTeamTitle"))
+            {
+                <h3 class="section-header">@Model.Content.GetPropertyValue("aboutTeamTitle")</h3>
+            }  
+            </div>
+        </div>              
+    </div>
+ </section>
