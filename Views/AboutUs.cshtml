@@ -30,7 +30,11 @@
             @if (Model.Content.HasValue("aboutTeamTitle"))
             {
                 <h3 class="section-header">@Model.Content.GetPropertyValue("aboutTeamTitle")</h3>
-            }  
+            }
+            @if (Model.Content.HasValue("aboutTheTeam"))
+                {
+                    @Model.Content.GetPropertyValue("aboutTheTeam")
+                }  
             </div>
         </div>              
     </div>
