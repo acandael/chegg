@@ -1,0 +1,97 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+}
+
+<div class="section-wrapper posts-w">
+      <div class="container">
+        <div class="row">
+          <div class="span8">
+            <section class="white-card recent-post clearfix extra-padding">
+                <header><h1 class="recent-post-header">@Model.Content.GetPropertyValue("pageTitle")</h1></header>
+                <div class="row-fluid">
+                  <div class="span4">
+                    <img src="images/kubussen_200x200.png" />
+                  </div>
+                  <div class="span8">
+                    <p class="post-content">
+                      @Html.Raw(umbraco.library.ReplaceLineBreaks(Model.Content.GetPropertyValue("leadText").ToString()))
+                    </p>
+                    <a href="about_us.html" class="btn btn-extra pull-right">More about us &gt;</a>
+                  </div>
+                </div>
+            </section>)
+          </div>
+          <div class="span4">
+            <aside class="blog-side-bar">
+              <section class="blog-side-search widget-tp">
+                  <h3><i class="icon-search"></i>Search</h3>
+                  <form class="no-margin-bottom form-search">
+                      <fieldset>
+                          <div class="controls controls-row">
+                              <input class="search-input span4" placeholder="Input search query" type="text">
+                          </div>
+                      </fieldset>
+                  </form>
+              </section>
+              <section class="blog-recent-tweets widget-tp">
+                <h3>
+                  <i class="icon-twitter-sign"></i>
+                  Recent Publications
+                </h3>
+                <ul>
+                  <li>
+                    <a href="#">about 7 hours ago</a>
+                    Aliquam vehicula tristique turpis dignissim accumsan
+                    <a href="#">soziev.com</a>
+                  </li>
+                  <li>
+                    <a href="#">about 7 hours ago</a>
+                    Aliquam vehicula tristique turpis dignissim accumsan
+                    <a href="#">soziev.com</a>
+                  </li>                                                     
+                </ul>
+                </section>
+            </aside>
+          </div>
+        </div>        
+      </div>
+    </div>
+    <div class="section-wrapper no-bottom no-top">
+      <div class="container">
+        <section class="row">
+          <div class="span12">
+            <h3 class="section-header">Onze Expertise</h3>
+          </div>
+          <div class="span3">
+            <div class="white-card">
+              <h5><a href="research_theme.html">Mediarecht en ethiek</a></h5>
+              <a href="research_theme.html"><img src="images/photos/media-signpost.jpg" /></a>            
+              <p>Onderzoek met betrekking tot mediarecht, auteursrecht en de journalistieke deontologie.</p>
+            </div>
+          </div>
+          <div class="span3">
+            <div class="white-card">
+              <h5>De journalist en zijn beroep</h5>
+              <img src="images/photos/microphones.jpg" />                   
+              <p>Binnen het CJS proberen we de journalist te bekijken in al zijn facetten en eigenschappen</p>
+            </div>
+          </div>
+          <div class="span3">
+            <div class="white-card">
+              
+              <h5>Innovatie in de media</h5>
+              <img src="images/photos/electronic-and-paper-media.jpg" />              
+              <p>Onderzoek naar de evoluties op het vlak van de sociale media, technologie en burgerjournalistiek</p>
+            </div>
+          </div>
+          <div class="span3">
+            <div class="white-card">
+              <h5>Nieuwsproductie en content</h5>
+              <img src="images/photos/cameraman.jpg" />                    
+              <p>Onderzoek naar selectieprocedures, gatekeepingpraktijken en bronnengebruik bij nieuwsproductie.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>

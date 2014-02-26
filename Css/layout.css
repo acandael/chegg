@@ -1,0 +1,30 @@
+/* override heading titles */
+h1.brand { margin-top: 0;}
+
+/* lists */
+ul.contact-data li { line-height: 1.5em;}
+
+ul.contact-data i { margin-right: 10px;}
+
+article.contact h1 { font-size: 24px;}
+
+article.contact h2 { font-size: 18px;}
+
+/* sprites */
+
+.sprite-expertise-microphones,
+.sprite-expertise-media-signpost,
+.sprite-expertise-electronic-and-paper-media,
+.sprite-expertise-cameraman,
+.sprite-expertise-kubussen{background-image:url('../images/sprites/expertise.png');background-repeat:no-repeat}
+.sprite-expertise-microphones{background-position:0px 0px;min-width: 100%; min-height: 100%;}
+.sprite-expertise-media-signpost{background-position:-250px 0px;width:100%;height:188px;}
+.sprite-expertise-electronic-and-paper-media{background-position:0px -188px;width:100%;height:188px;}
+.sprite-expertise-cameraman{background-position:-250px -188px;width:100%;height:188px;}
+.sprite-expertise-kubussen{background-position:-500px 0px;width:100%;height:231px;}
+
+/*Google Map*/
+.mapdimensions {width: 100%; height:500px;}
+
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
