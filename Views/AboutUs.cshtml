@@ -26,16 +26,23 @@
             </div>
         </div>
         <div class='row row-separated'>
-            <div class='span12'>
-            @if (Model.Content.HasValue("aboutTeamTitle"))
-            {
+            <section class='span9'>
+            <header>
+                <h2>
+				@if (Model.Content.HasValue("aboutTeamTitle"))
+            	{
                 <h3 class="section-header">@Model.Content.GetPropertyValue("aboutTeamTitle")</h3>
-            }
+            	}
+				</h2>
+            </header>
+             
             @if (Model.Content.HasValue("aboutTheTeam"))
                 {
                     @Model.Content.GetPropertyValue("aboutTheTeam")
-                }  
-            </div>
+                }
+                <br />
+				@Umbraco.RenderMacro("MemberGallery")
+        </section>
         </div>              
     </div>
  </section>

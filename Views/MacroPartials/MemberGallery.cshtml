@@ -1,0 +1,31 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+	
+@{
+    var members = Model.Content.DescendantsOrSelf().Where(x => x.DocumentTypeAlias == "MemberItem");
+    
+   
+        foreach (var member in members)
+        {
+            
+               <div class="span3">
+                    <div class="white-card">               
+                <a href="@member.Url">
+                    @if (member.HasValue("memberImage"))
+                    {
+                      var image =  member.GetPropertyValue<DAMP.PropertyEditorValueConverter.Model>    ("memberImage");
+                      
+                      <div class="img-w"><img alt="@image.First.Alt" src="@image.First.TypedCrops["membercrop"]" /></div>
+                    }
+                    else
+                    {
+                        <img alt="Photo-card-big-6" src="../images/test-user.png" />
+                    }
+                    
+                </a>
+                <h5>@member.GetPropertyValue("memberName")</h5>
+                </div> 
+               </div>
+            
+        }
+    
+}
