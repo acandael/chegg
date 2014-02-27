@@ -21,28 +21,26 @@
                 @if (Model.Content.HasValue("aboutImage"))
                 {
                     var image1 = Model.Content.GetPropertyValue<DAMP.PropertyEditorValueConverter.Model>("aboutImage"); 
-                <img alt="@image1.First.Alt" src="@image1.First.TypedCrops["aboutcrop"]" />
+                <img alt="@image1.First.Alt" src="@image1.First.TypedCrops["aboutcrop"]" class="img-polaroid" />
                 }
             </div>
         </div>
-        <div class='row row-separated'>
-            <section class='span9'>
-            <header>
-                <h2>
-				@if (Model.Content.HasValue("aboutTeamTitle"))
-            	{
-                <h3 class="section-header">@Model.Content.GetPropertyValue("aboutTeamTitle")</h3>
-            	}
-				</h2>
-            </header>
-             
-            @if (Model.Content.HasValue("aboutTheTeam"))
+        <div class='row'>
+            <div class="span12">
+          		@if (Model.Content.HasValue("aboutTeamTitle"))
                 {
-                    @Model.Content.GetPropertyValue("aboutTheTeam")
+                <h3 class="section-header">@Model.Content.GetPropertyValue("aboutTeamTitle")</h3>
+                }
+				
+                @if (Model.Content.HasValue("aboutTheTeam"))
+                {
+                   @Model.Content.GetPropertyValue("aboutTheTeam")
                 }
                 <br />
-				@Umbraco.RenderMacro("MemberGallery")
-        </section>
-        </div>              
+              </div>
+             
+			  @Umbraco.RenderMacro("MemberGallery")  
+            
+        </div>
     </div>
  </section>

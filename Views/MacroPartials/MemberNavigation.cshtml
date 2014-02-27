@@ -1,0 +1,23 @@
+@inherits Umbraco.Web.Macros.PartialViewMacroPage
+
+@{
+    List<string> categories = new List<string> { "Professor", "Postdoc", "PhD Student" };    
+    
+    foreach (var category in categories)
+    {
+        var categorieItems = Model.Content.DescendantsOrSelf("MemberItem").Where("memberCategory == \"" + category + "\"");
+
+        if (categorieItems.Count() > 0)
+        {
+            
+            <ul class="nav nav-list bs-docs-sidenav" data-offset-top="200">
+                <h3>@category</h3>
+                @foreach (var member in categorieItems)
+                {
+                    var cssClass = member.Id == Model.Content.Id ? "active" : string.Empty;
+                    <li class="@cssClass"><a href="@member.Url"><i class="icon-chevron-left"></i> @member.GetPropertyValue("metaTitle")</a></li>
+                }
+            </ul>
+        }
+    }
+}

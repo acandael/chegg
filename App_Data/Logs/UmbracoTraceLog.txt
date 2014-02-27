@@ -352,3 +352,119 @@
    at Umbraco.Web.Macros.PartialViewMacroEngine.Execute(MacroModel macro, INode currentPage)
    at umbraco.macro.LoadPartialViewMacro(MacroModel macro)
    at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2014-02-27 15:13:03,337 [20] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 138] Content 'jelena brankovic' with Id '1069' has been published.
+2014-02-27 15:13:10,944 [20] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 115] Content 'jeroen huisman' with Id '1071' has been published.
+2014-02-27 15:16:43,493 [20] WARN  umbraco.macro - [Thread 11] Error loading Partial View (file: ~/Views/MacroPartials/MemberNavigation.cshtml). Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at ASP._Page_Views_MacroPartials_MemberNavigation_cshtml.Execute() in c:\Repos\chegg\Views\MacroPartials\MemberNavigation.cshtml:line 8
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at Umbraco.Web.Mvc.ControllerExtensions.RenderViewResultAsString(ControllerBase controller, ViewResultBase viewResult)
+   at Umbraco.Web.Macros.PartialViewMacroEngine.Execute(MacroModel macro, INode currentPage)
+   at umbraco.macro.LoadPartialViewMacro(MacroModel macro)
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2014-02-27 15:18:04,750 [20] WARN  umbraco.macro - [Thread 121] Error loading Partial View (file: ~/Views/MacroPartials/MemberNavigation.cshtml). Exception: System.NullReferenceException: Object reference not set to an instance of an object.
+   at ASP._Page_Views_MacroPartials_MemberNavigation_cshtml.Execute() in c:\Repos\chegg\Views\MacroPartials\MemberNavigation.cshtml:line 8
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at Umbraco.Web.Mvc.ControllerExtensions.RenderViewResultAsString(ControllerBase controller, ViewResultBase viewResult)
+   at Umbraco.Web.Macros.PartialViewMacroEngine.Execute(MacroModel macro, INode currentPage)
+   at umbraco.macro.LoadPartialViewMacro(MacroModel macro)
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2014-02-27 15:19:13,091 [20] WARN  umbraco.macro - [Thread 152] Error loading Partial View (file: ~/Views/MacroPartials/MemberNavigation.cshtml). Exception: System.Web.HttpCompileException (0x80004005): c:\Repos\chegg\Views\MacroPartials\MemberNavigation.cshtml(8): error CS0119: 'Umbraco.Web.PublishedContentExtensions.Children(Umbraco.Core.Models.IPublishedContent)' is a 'method', which is not valid in the given context
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetObjectFactory(String virtualPath, Boolean throwIfNotFound)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   at Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPathFromSpecificName(ControllerContext controllerContext, String name, String cacheKey, String[]& searchedLocations)
+   at Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   at Microsoft.Web.Mvc.ViewEngineFixWorker`1.FindPartialView(ControllerContext controllerContext, String partialViewName, Boolean useCache)
+   at System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   at Umbraco.Web.Mvc.ControllerExtensions.EnsureViewObjectDataOnResult(ControllerBase controller, ViewResultBase result)
+   at Umbraco.Web.Mvc.ControllerExtensions.RenderViewResultAsString(ControllerBase controller, ViewResultBase viewResult)
+   at Umbraco.Web.Macros.PartialViewMacroEngine.Execute(MacroModel macro, INode currentPage)
+   at umbraco.macro.LoadPartialViewMacro(MacroModel macro)
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2014-02-27 15:19:20,684 [20] WARN  umbraco.macro - [Thread 154] Error loading Partial View (file: ~/Views/MacroPartials/MemberNavigation.cshtml). Exception: System.Web.HttpCompileException (0x80004005): c:\Repos\chegg\Views\MacroPartials\MemberNavigation.cshtml(8): error CS0119: 'Umbraco.Web.PublishedContentExtensions.Children(Umbraco.Core.Models.IPublishedContent)' is a 'method', which is not valid in the given context
+   at System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetObjectFactory(String virtualPath, Boolean throwIfNotFound)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   at Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPathFromSpecificName(ControllerContext controllerContext, String name, String cacheKey, String[]& searchedLocations)
+   at Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   at Microsoft.Web.Mvc.ViewEngineFixWorker`1.FindPartialView(ControllerContext controllerContext, String partialViewName, Boolean useCache)
+   at System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   at Umbraco.Web.Mvc.ControllerExtensions.EnsureViewObjectDataOnResult(ControllerBase controller, ViewResultBase result)
+   at Umbraco.Web.Mvc.ControllerExtensions.RenderViewResultAsString(ControllerBase controller, ViewResultBase viewResult)
+   at Umbraco.Web.Macros.PartialViewMacroEngine.Execute(MacroModel macro, INode currentPage)
+   at umbraco.macro.LoadPartialViewMacro(MacroModel macro)
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2014-02-27 15:19:35,403 [20] WARN  umbraco.macro - [Thread 98] Error loading Partial View (file: ~/Views/MacroPartials/MemberNavigation.cshtml). Exception: System.Web.HttpCompileException (0x80004005): c:\Repos\chegg\Views\MacroPartials\MemberNavigation.cshtml(8): error CS0119: 'Umbraco.Web.PublishedContentExtensions.Children(Umbraco.Core.Models.IPublishedContent)' is a 'method', which is not valid in the given context
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetObjectFactory(String virtualPath, Boolean throwIfNotFound)
+   at System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.FileExists(String virtualPath)
+   at Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPathFromSpecificName(ControllerContext controllerContext, String name, String cacheKey, String[]& searchedLocations)
+   at Microsoft.Web.Mvc.ViewEngineFixWorker`1.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   at Microsoft.Web.Mvc.ViewEngineFixWorker`1.FindPartialView(ControllerContext controllerContext, String partialViewName, Boolean useCache)
+   at System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   at Umbraco.Web.Mvc.ControllerExtensions.EnsureViewObjectDataOnResult(ControllerBase controller, ViewResultBase result)
+   at Umbraco.Web.Mvc.ControllerExtensions.RenderViewResultAsString(ControllerBase controller, ViewResultBase viewResult)
+   at Umbraco.Web.Macros.PartialViewMacroEngine.Execute(MacroModel macro, INode currentPage)
+   at umbraco.macro.LoadPartialViewMacro(MacroModel macro)
+   at umbraco.macro.renderMacro(Hashtable pageElements, Int32 pageId)
+2014-02-27 15:24:16,171 [20] INFO  umbraco.cms.businesslogic.web.Document - [Thread 132] New document 2077
+2014-02-27 15:27:27,775 [20] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 144] Content 'jelle mampaey' with Id '2077' has been published.
+2014-02-27 15:35:49,688 [20] INFO  umbraco.cms.businesslogic.web.Document - [Thread 111] New document 2079
+2014-02-27 15:38:27,484 [20] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 142] Content 'marco seeber' with Id '2079' has been published.
+2014-02-27 15:39:11,798 [20] INFO  umbraco.cms.businesslogic.web.Document - [Thread 136] New document 2081
+2014-02-27 15:41:20,386 [20] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 153] Content 'lisa brockerhoff' with Id '2081' has been published.
+2014-02-27 15:42:31,995 [20] INFO  umbraco.BusinessLogic.Log - [Thread 113] Log scrubbed.  Removed all items older than 2013-12-29 15:42:31
+2014-02-27 15:42:31,997 [20] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 113] Application shutdown. Reason: MaxRecompilationsReached
+2014-02-27 15:42:37,497 [118] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2014-02-27 15:42:37,509 [118] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 5ms)
+2014-02-27 15:42:37,511 [118] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2014-02-27 15:42:37,610 [118] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 18 (took 99ms)
+2014-02-27 15:42:37,611 [118] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2014-02-27 15:42:37,619 [118] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 12 (took 8ms)
+2014-02-27 15:42:37,620 [118] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+2014-02-27 15:42:37,624 [118] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 4ms)
+2014-02-27 15:42:37,624 [118] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+2014-02-27 15:42:37,629 [118] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 3 (took 4ms)
+2014-02-27 15:42:37,629 [118] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+2014-02-27 15:42:37,635 [118] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 5ms)
+2014-02-27 15:42:37,635 [118] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+2014-02-27 15:42:37,641 [118] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 5ms)
+2014-02-27 15:42:37,753 [118] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 1] Initializing Examine and binding to business logic events
+2014-02-27 15:42:37,836 [118] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 1] Adding examine event handlers for index providers: 3
+2014-02-27 15:42:37,841 [118] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.IApplication
+2014-02-27 15:42:37,850 [118] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 8ms)
+2014-02-27 15:42:37,894 [118] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.ITree
+2014-02-27 15:42:37,911 [118] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 16ms)
+2014-02-27 15:42:37,967 [118] INFO  umbraco.content - [Thread 91] Loading content from disk cache...
+2014-02-27 15:42:38,519 [118] INFO  Umbraco.Core.PluginManager - [Thread 91] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2014-02-27 15:42:38,525 [118] INFO  Umbraco.Core.PluginManager - [Thread 91] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 17 (took 6ms)
+2014-02-27 15:42:38,791 [118] INFO  Umbraco.Core.PluginManager - [Thread 91] Starting resolution types of umbraco.cms.businesslogic.macro.IMacroEngine
+2014-02-27 15:42:38,797 [118] INFO  Umbraco.Core.PluginManager - [Thread 91] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 6ms)
+2014-02-27 16:04:08,460 [118] INFO  Umbraco.Core.PluginManager - [Thread 48] Starting resolution types of umbraco.interfaces.IDataType
+2014-02-27 16:04:08,499 [118] INFO  Umbraco.Core.PluginManager - [Thread 48] Completed resolution of types of umbraco.interfaces.IDataType, found 82 (took 39ms)
+2014-02-27 16:04:08,532 [118] INFO  Umbraco.Core.PluginManager - [Thread 48] Starting resolution types of umbraco.interfaces.ITree
+2014-02-27 16:04:08,548 [118] INFO  Umbraco.Core.PluginManager - [Thread 48] Completed resolution of types of umbraco.interfaces.ITree, found 39 (took 16ms)
+2014-02-27 16:04:54,679 [118] INFO  Umbraco.Core.PluginManager - [Thread 137] Starting resolution types of umbraco.interfaces.ICacheRefresher
+2014-02-27 16:04:54,688 [118] INFO  Umbraco.Core.PluginManager - [Thread 137] Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 22 (took 8ms)
+2014-02-27 16:04:54,886 [118] INFO  Umbraco.Core.PluginManager - [Thread 89] Starting resolution types of umbraco.BusinessLogic.Actions.IActionHandler
+2014-02-27 16:04:54,891 [118] INFO  Umbraco.Core.PluginManager - [Thread 89] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 5ms)
+2014-02-27 16:05:09,528 [118] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 137] Content 'jelena brankovic' with Id '1069' has been published.
+2014-02-27 16:05:26,870 [118] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 136] Content 'jelle mampaey' with Id '2077' has been published.
+2014-02-27 16:05:42,889 [118] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 137] Content 'marco seeber' with Id '2079' has been published.
+2014-02-27 16:05:57,133 [118] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 32] Content 'jeroen huisman' with Id '1071' has been published.
+2014-02-27 16:06:14,186 [118] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 89] Content 'lisa brockerhoff' with Id '2081' has been published.
+2014-02-27 16:12:18,368 [118] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 146] Content 'About Us' with Id '1057' has been published.
