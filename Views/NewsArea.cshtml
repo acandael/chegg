@@ -1,0 +1,37 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+}
+
+<div class='section-wrapper post-w'>
+        <div class='container'>
+           <div class='row'>
+             <div class="span8">             	
+             	<section class="single-post-w">
+					<h1 class="post-title">@Umbraco.Field("pageTitle")</h1>
+					@RenderBody()
+				</section>              
+             </div>
+             <div class="span4">
+             	<aside class="blog-side-bar">
+
+             		<section class="blog-side-search widget-tp">
+             			
+                    <h3><i class='icon-search'></i>Search in news</h3>
+                 
+                    <form id="searchform" class="no-margin-bottom form-search" method="get" action="/search-results.aspx">
+                      <fieldset>
+                          <div class="controls controls-row">
+                              <input id="search-term" name="s" class="search-input span4" placeholder="Input search query" type="text" onclick="runSearch(); value="search">
+                          </div>
+                      </fieldset>
+                  </form>
+             	    </section>
+                  <section class="widget-tp">
+                    @Umbraco.RenderMacro("LatestNews")
+                  </section>
+             	</aside>
+             </div>
+           </div>
+        </div>
+      </div>

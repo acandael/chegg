@@ -1,0 +1,18 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+
+@{
+    var newsitems = Model.Content.Children;
+  
+  foreach (var item in newsitems)
+  {
+      <p><strong><time datetime="@item.CreateDate.ToString("dd/MM/yyyy")">@item.CreateDate.ToString("dd/MM/yyyy")</time>&nbsp;&nbsp;<a href="@item.Url">@item.GetPropertyValue("pageTitle")</a></strong>
+      <br />
+      @if (@item.HasValue("newsSummary"))
+      {
+          @item.GetPropertyValue("newsSummary");
+      }
+      </p>
+    <br />
+  }
+  
+ }

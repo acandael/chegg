@@ -40,3 +40,68 @@
 2014-02-28 09:09:13,006 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 9] Content 'marco seeber' with Id '2079' has been published.
 2014-02-28 09:09:15,382 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 9] Content 'jeroen huisman' with Id '1071' has been published.
 2014-02-28 09:09:18,276 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 52] Content 'lisa brockerhoff' with Id '2081' has been published.
+2014-02-28 09:24:30,128 [6] INFO  umbraco.cms.businesslogic.web.Document - [Thread 58] New document 3084
+2014-02-28 09:25:05,992 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 22] Content 'News' with Id '3084' has been published.
+2014-02-28 09:35:26,289 [6] INFO  umbraco.BasePages.BasePage - [Thread 12] User admin (Id: 0) logged in
+2014-02-28 09:37:07,486 [6] INFO  umbraco.cms.businesslogic.web.Document - [Thread 12] New document 3087
+2014-02-28 09:37:53,187 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 61] Content 'some news' with Id '3087' has been published.
+2014-02-28 09:40:40,271 [6] INFO  Umbraco.Core.PluginManager - [Thread 44] Starting resolution types of Umbraco.Web.BaseRest.RestExtensionAttribute
+2014-02-28 09:40:40,283 [6] INFO  Umbraco.Core.PluginManager - [Thread 44] Completed resolution of types of Umbraco.Web.BaseRest.RestExtensionAttribute, found 4 (took 11ms)
+2014-02-28 10:33:15,784 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2014-02-28 10:33:15,800 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 7ms)
+2014-02-28 10:33:15,809 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2014-02-28 10:33:15,998 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 18 (took 187ms)
+2014-02-28 10:33:16,028 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2014-02-28 10:33:16,037 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 12 (took 8ms)
+2014-02-28 10:33:16,039 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+2014-02-28 10:33:16,044 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 4ms)
+2014-02-28 10:33:16,044 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+2014-02-28 10:33:16,048 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 3 (took 4ms)
+2014-02-28 10:33:16,054 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+2014-02-28 10:33:16,059 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 5ms)
+2014-02-28 10:33:16,060 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+2014-02-28 10:33:16,065 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 4ms)
+2014-02-28 10:33:16,325 [6] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 1] Initializing Examine and binding to business logic events
+2014-02-28 10:33:16,640 [6] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 1] Adding examine event handlers for index providers: 3
+2014-02-28 10:33:16,653 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.IApplication
+2014-02-28 10:33:16,662 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 8ms)
+2014-02-28 10:33:16,722 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.ITree
+2014-02-28 10:33:16,739 [6] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 16ms)
+2014-02-28 10:33:17,027 [6] INFO  umbraco.content - [Thread 9] Loading content from disk cache...
+2014-02-28 10:33:17,488 [6] INFO  Umbraco.Core.PluginManager - [Thread 9] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2014-02-28 10:33:17,494 [6] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 17 (took 5ms)
+2014-02-28 10:33:17,779 [6] INFO  Umbraco.Core.PluginManager - [Thread 9] Starting resolution types of umbraco.cms.businesslogic.macro.IMacroEngine
+2014-02-28 10:33:17,785 [6] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of umbraco.cms.businesslogic.macro.IMacroEngine, found 4 (took 6ms)
+2014-02-28 10:38:32,571 [6] INFO  Umbraco.Core.PluginManager - [Thread 9] Starting resolution types of umbraco.BusinessLogic.Actions.IActionHandler
+2014-02-28 10:38:32,576 [6] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 5ms)
+2014-02-28 10:38:32,752 [6] INFO  Umbraco.Core.PluginManager - [Thread 9] Starting resolution types of umbraco.interfaces.ITree
+2014-02-28 10:38:32,768 [6] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of umbraco.interfaces.ITree, found 39 (took 15ms)
+2014-02-28 10:38:42,135 [6] INFO  Umbraco.Core.PluginManager - [Thread 9] Starting resolution types of umbraco.interfaces.IDataType
+2014-02-28 10:38:42,161 [6] INFO  Umbraco.Core.PluginManager - [Thread 9] Completed resolution of types of umbraco.interfaces.IDataType, found 82 (took 26ms)
+2014-02-28 10:45:45,876 [6] INFO  Umbraco.Core.PluginManager - [Thread 29] Starting resolution types of umbraco.interfaces.ICacheRefresher
+2014-02-28 10:45:45,884 [6] INFO  Umbraco.Core.PluginManager - [Thread 29] Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 22 (took 8ms)
+2014-02-28 10:45:50,675 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 7] Content 'About Us' with Id '1057' has been published.
+2014-02-28 10:49:48,222 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 31] Content 'About Us' with Id '1057' has been published.
+2014-02-28 10:50:19,549 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 32] Content 'About Us' with Id '1057' has been published.
+2014-02-28 10:50:19,667 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 32] Content 'About Us' with Id '1057' has been published.
+2014-02-28 10:56:41,627 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 41] Content 'jeroen huisman' with Id '1071' has been published.
+2014-02-28 11:02:32,462 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 21] Content 'jelena brankovic' with Id '1069' has been published.
+2014-02-28 11:07:56,733 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 35] Content 'lisa brockerhoff' with Id '2081' has been published.
+2014-02-28 11:11:10,246 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 14] Content 'marco seeber' with Id '2079' has been published.
+2014-02-28 11:15:00,872 [6] INFO  umbraco.cms.businesslogic.web.Document - [Thread 48] New document 3099
+2014-02-28 11:15:53,012 [6] INFO  Umbraco.Core.Services.ContentService - [Thread 28] Content 'martina vukasovic' with Id '3099' could not be published because of invalid properties.
+2014-02-28 11:16:07,005 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 49] Content 'martina vukasovic' with Id '3099' has been published.
+2014-02-28 11:17:18,162 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 51] Content 'martina vukasovic' with Id '3099' has been published.
+2014-02-28 11:23:13,523 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 22] Content 'jelle mampaey' with Id '2077' has been published.
+2014-02-28 11:30:57,913 [6] INFO  umbraco.cms.businesslogic.web.Document - [Thread 15] New document 3102
+2014-02-28 11:31:39,694 [6] INFO  Umbraco.Core.Services.ContentService - [Thread 22] Content 'meta gorup' with Id '3102' could not be published because of invalid properties.
+2014-02-28 11:31:46,940 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 56] Content 'meta gorup' with Id '3102' has been published.
+2014-02-28 11:38:15,539 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 13] Content 'some news' with Id '3087' has been published.
+2014-02-28 11:43:43,682 [6] INFO  Umbraco.Core.PluginManager - [Thread 38] Starting resolution types of Umbraco.Web.BaseRest.RestExtensionAttribute
+2014-02-28 11:43:43,693 [6] INFO  Umbraco.Core.PluginManager - [Thread 38] Completed resolution of types of Umbraco.Web.BaseRest.RestExtensionAttribute, found 4 (took 10ms)
+2014-02-28 11:48:19,354 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 23] Content 'some news' with Id '3087' has been published.
+2014-02-28 11:51:08,474 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 58] Content 'some news' with Id '3087' has been published.
+2014-02-28 11:52:35,646 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 44] Content 'News' with Id '3084' has been published.
+2014-02-28 11:54:56,848 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 13] Content 'News' with Id '3084' has been published.
+2014-02-28 12:03:01,720 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 23] Content 'News' with Id '3084' has been published.
+2014-02-28 14:01:39,376 [6] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 52] Content 'some news' with Id '3087' has been published.

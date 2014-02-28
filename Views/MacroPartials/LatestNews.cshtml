@@ -1,0 +1,15 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+
+@{
+var newsitem = Model.Content.DescendantsOrSelf().Where(x => x.DocumentTypeAlias == "NewsItem").FirstOrDefault();
+
+  if (newsitem != null)
+  {
+  <section class="blog-recent-tweets widget-tp">                
+     <h3><i class="icon-twitter-sign"></i><a href="news.aspx">Latest News</a></h3>    
+     <ul>
+     <li><time datetime="@newsitem.CreateDate.ToString("dd/MM/yyyy")">@newsitem.CreateDate.ToString("dd/MM/yyyy")</time> &nbsp;<a href="@newsitem.Url">@newsitem.GetPropertyValue("pageTitle")</a></li>
+     </ul>
+  </section>
+  }
+}

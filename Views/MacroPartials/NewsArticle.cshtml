@@ -1,0 +1,47 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+	
+<div class="row-fluid">
+    <div class="span8">
+        <header>
+            <h3 class="post-title"> @Model.Content.GetPropertyValue("pageTitle")</h3>            
+        </header>
+        <address><time datetime="@(Model.Content.CreateDate.ToString("dd/MM/yyyy"))"></time>@(Model.Content.CreateDate.ToString("dd/MM/yyyy")) </address>                   
+        
+        @if (Model.Content.HasValue("newsDownload"))
+        {            
+    var document = Model.Content.GetPropertyValue<DAMP.PropertyEditorValueConverter.Model>("newsDownload");
+
+    string filename = String.Format("{0}.{1}", document.First.Name, document.First.Media.umbracoExtension);
+            <p><i class="icon-download"></i> <a href="@document.First.File" title="@filename" target="_blank">@filename</a></p>
+        }
+          @if (Model.Content.HasValue("newsLink"))
+        {
+            <p>
+            @if (CurrentPage.newsLink.Title != "")
+            {
+                    <i class="icon-link"></i> <a href="@CurrentPage.newsLink.Url" title="@CurrentPage.newsLink.Title" target="_blank">
+                        @CurrentPage.newsLink.Title
+                    </a>    
+             }
+             else
+             {
+                    <i class="icon-link"></i> <a href="@CurrentPage.newsLink.Url" title="@CurrentPage.newsLink.Url" target="_blank">
+                        @CurrentPage.newsLink.Url
+                    </a>
+             }
+            </p>
+        }
+        @if (Model.Content.HasValue("newsArticle"))
+        {
+            @Model.Content.GetPropertyValue("newsArticle");
+        }
+    </div>
+    <div class="span4">
+        @if (Model.Content.HasValue("newsImage"))
+        {
+            var image = Model.Content.GetPropertyValue<DAMP.PropertyEditorValueConverter.Model>("newsImage");
+
+            <img class="img-polaroid pull-right" src="@image.First.TypedCrops["newscrop"]" />
+        }
+    </div>
+</div>
