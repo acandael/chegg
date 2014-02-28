@@ -1,0 +1,16 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+	
+@{
+    var root = Model.Content.AncestorOrSelf(1);
+    var rootChildren = root.Children.Where(x => x.IsVisible());
+}
+
+<ul class="nav">
+    <li class="@(root.Id == Model.Content.Id ? "active" : string.Empty)"><a href="@root.Url">@root.Name</a></li>
+    @foreach (var page in rootChildren)
+    {
+        var cssClass = page.Id == Model.Content.Id ? "active" : string.Empty;
+        <li class="@cssClass"><a href="@page.Url">@page.GetPropertyValue("title", page.Name)</a></li> 
+        
+    }
+</ul>
