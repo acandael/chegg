@@ -1,0 +1,69 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+	
+<header>
+   <h1>@Model.Content.GetPropertyValue("metaTitle")</h1>
+</header> 	
+<div class="row-fluid">
+    <div class="span8">
+        <p class="lead">
+            @if (Model.Content.HasValue("memberBio"))
+            {
+                @Model.Content.GetPropertyValue("memberBio");
+            }
+        </p>
+        <h2>Contact</h2>
+        <ul class="unstyled contact-data">
+            @if (Model.Content.HasValue("memberEmail"))
+            {
+
+                <li>
+                    <i class="icon-envelope-alt"></i>
+                    <a href="mailto:@Model.Content.GetPropertyValue("memberEmail")">@Model.Content.GetPropertyValue("memberEmail")</a>
+                </li>
+            }
+            @if (Model.Content.HasValue("memberTelephone"))
+            {
+
+                <li>
+                    <i class="icon-phone"></i>
+                    @Model.Content.GetPropertyValue("memberTelephone")
+                </li>
+            }
+            @if (Model.Content.HasValue("Fax"))
+            {
+
+                <li>
+                    <i class="icon-print"></i>
+                    @Model.Content.GetPropertyValue("Fax")
+                </li>
+            }
+            @if (Model.Content.HasValue("memberAddress"))
+            {
+
+                <li>
+                    <i class="icon-map-marker"></i>@Model.Content.GetPropertyValue("memberAddress")
+                </li>
+            }
+        </ul>
+        @if (Model.Content.HasValue("uGentId"))
+        {
+            <h2>Academic Bibliography</h2>
+
+            <i class="icon-link"></i> <a href="http://biblio.ugent.be/person/@Model.Content.GetPropertyValue("uGentId")">http://biblio.ugent.be/person/@Model.Content.GetPropertyValue("uGentId")</a>
+        }
+      
+    </div>
+    <div class="span4">
+        @if (Model.Content.HasValue("memberImage"))
+        {
+            var image = Model.Content.GetPropertyValue<DAMP.PropertyEditorValueConverter.Model>("memberImage");
+
+            <img class="img-polaroid" src="@image.First.TypedCrops["membercrop"]" />
+        }
+        else
+        {
+
+            <img class="img-polaroid" src="../images/test-user.png">
+        }
+    </div>
+</div>

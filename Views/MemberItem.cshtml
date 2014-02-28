@@ -1,0 +1,21 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+}
+
+<br />
+<div class="container">
+    <div class="row">           
+      <div class="span9">          
+          <article class="white-card extra-padding contact">            
+            @Umbraco.RenderMacro("MemberData")
+          </article>             
+      </div>
+      <aside class="span3 bs-docs-sidebar">
+        <h3>CJS Members</h3>
+        <nav>
+          @Umbraco.RenderMacro("MemberNavigation")
+        </nav>
+      </aside>  
+    </div>
+  </div>

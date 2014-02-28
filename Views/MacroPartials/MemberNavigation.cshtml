@@ -5,7 +5,7 @@
     
     foreach (var category in categories)
     {
-        var categorieItems = Model.Content.DescendantsOrSelf("MemberItem").Where("memberCategory == \"" + category + "\"");
+        var categorieItems = Model.Content.Parent.DescendantsOrSelf().Where("memberCategory == \"" + category + "\"");
 
         if (categorieItems.Count() > 0)
         {
